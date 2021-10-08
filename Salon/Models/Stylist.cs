@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Salon
+namespace Salon.Models
 {
   public class Stylist
   {

@@ -1,0 +1,18 @@
+@{
+  Layout = "_Layout";
+}
+
+@model Salon.Models.Stylist
+
+<h2>Are you sure you want to remove this stylist? '\n'
+This action is not reversible, and any existing clients will need to be re-added to another stylist.
+If re-assigning all clients to a new stylist, please instead edit the stylist's name to the new stylist with the link below.</h2>
+
+@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+
+<p>@Html.ActionLink("Edit Stylist", "Edit", new {id = Model.StylistId})</p>
+<p>@Html.ActionLink("Back to List", "Index")</p>

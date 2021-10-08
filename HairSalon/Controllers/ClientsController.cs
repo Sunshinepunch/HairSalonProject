@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using Salon.Models;
+using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System;
 
 
-namespace Salon.Controllers
+namespace HairSalon.Controllers
 {
   public class ClientsController : Controller
   {

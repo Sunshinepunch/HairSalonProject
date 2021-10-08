@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using Salon.Models;
+using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
-namespace Salon.Controllers
+namespace HairSalon.Controllers
 {
   public class StylistsController : Controller
   {

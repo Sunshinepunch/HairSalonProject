@@ -12,4 +12,9 @@ namespace HairSalon.Models
     public string StylistName {get; set;}
     public virtual ICollection<Client> Clients {get; set;}
   }
+
+  public static class Employees
+  {
+    public static int Employee {get; set;}
+  }
 }

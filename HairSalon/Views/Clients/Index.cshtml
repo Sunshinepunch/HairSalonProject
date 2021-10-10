@@ -12,15 +12,22 @@
   <h3>No clients have been added yet!</h3>
 }
 
-@foreach (Client client in Model)
-{
-  <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | Current Stylist: @client.Stylist.StylistName</li>
-}
+
+  @foreach (Client client in Model)
+  {
+    <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | Current Stylist: @client.Stylist.StylistName</li>
+  }
 
 
 
 <!-- <p>@Html.ActionLink("Filter", "Search", new { searchString = $"" })</p> -->
 
 @* <p>@Html.ActionLink("Search Clients", "Search")</p> *@
+
+
+
+
+
 <p>@Html.ActionLink("Add new client", "Create")</p>
+
 <p>@Html.ActionLink("Home", "Index", "Home")</p>

@@ -4,11 +4,12 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Are you sure you want to remove this stylist? '\n'
-This action is not reversible, and any existing clients will need to be re-added to another stylist.
-If re-assigning all clients to a new stylist, please instead edit the stylist's name to the new stylist with the link below.</h2>
+<h2>Are you sure you want to remove this stylist?</h2>
 
-@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)
+<h4>This action is not reversible, and any existing clients will need to be re-added to another stylist.
+If re-assigning all clients to a new stylist, please instead edit the stylist's name to the new stylist with the link below.</h4>
+
+Current Stylist: @Html.DisplayFor(model => model.StylistName)
 @using (Html.BeginForm())
 {
     <input type="submit" value="Delete" />

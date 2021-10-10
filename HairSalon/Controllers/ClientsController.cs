@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 using System;
 
 
+
 namespace HairSalon.Controllers
 {
   public class ClientsController : Controller
   {
     private readonly SalonContext _db;
     
+
     public ClientsController(SalonContext db) {
       _db = db;
     }

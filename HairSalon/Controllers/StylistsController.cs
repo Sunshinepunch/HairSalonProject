@@ -32,6 +32,7 @@ namespace HairSalon.Controllers
     {
       _db.Stylists.Add(stylist);
       _db.SaveChanges();
+      Employees.Employee += 1;
       return RedirectToAction("Index");
     }
 
@@ -58,6 +59,7 @@ namespace HairSalon.Controllers
     public ActionResult Delete (int id)
     {
       var thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      Employees.Employee -= 1;
       return View(thisStylist);
     }
 

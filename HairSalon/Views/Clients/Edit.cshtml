@@ -6,5 +6,20 @@
 @model List<Salon.Models.Client>;
 
 
+<h4>Edit this Client: @Html.DisplayFor(model => model.ClientName)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.ClientId)
+
+  @Html.LabelFor(model => model.ClientName)
+  @Html.EditorFor(model => model.ClientName)
+
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId")
+  
+  <input type="submit" value="Save" />
+}
+
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
